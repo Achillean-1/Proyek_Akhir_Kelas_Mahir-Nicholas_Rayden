@@ -4,9 +4,9 @@ import joblib
 import numpy as np
 
 try:
-    model = joblib.load('model/dropout_rf_model_smote.pkl')
-    scaler = joblib.load('model/scaler_rf.pkl')
-    training_columns = joblib.load('model/training_columns.pkl')
+    model = joblib.load('Jaya_Jaya_Institut/model/dropout_rf_model_smote.pkl')
+    scaler = joblib.load('Jaya_Jaya_Institut/model/scaler_rf.pkl')
+    training_columns = joblib.load('Jaya_Jaya_Institut/model/training_columns.pkl')
 except Exception as e:
     st.error(f"Model or scaler not found: {e}")
     st.stop()
