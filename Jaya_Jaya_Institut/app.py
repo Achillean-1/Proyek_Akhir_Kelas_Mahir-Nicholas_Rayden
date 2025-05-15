@@ -1,18 +1,12 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 import numpy as np
 
 try:
-    with open('model/dropout_rf_model_smote.pkl', 'rb') as f:
-        model = pickle.load(f)
-
-    with open('model/scaler_rf.pkl', 'rb') as f:
-        scaler = pickle.load(f)
-
-    with open('model/training_columns.pkl', 'rb') as f:
-        training_columns = pickle.load(f)
-
+    model = joblib.load('model/dropout_rf_model_smote.pkl')
+    scaler = joblib.load('model/scaler_rf.pkl')
+    training_columns = joblib.load('model/training_columns.pkl')
 except Exception as e:
     st.error(f"Model or scaler not found: {e}")
     st.stop()
@@ -133,9 +127,8 @@ for i, (feature, (min_val, max_val, default)) in enumerate(numerical_features.it
             min_value=float(min_val),
             max_value=float(max_val),
             value=float(default),
-            step=0.1 if feature in ['Admission_grade', 'Previous_qualification_grade', 
-                                    'Curricular_units_1st_sem_grade', 'Curricular_units_2nd_sem_grade',
-                                    'Unemployment_rate', 'Inflation_rate', 'GDP'] else 1.0
+            step=0.1 if feature in ['Admission_grade', 'Previous_qualification_grade', 'Curricular_units_1st_sem_grade',
+                                    'Curricular_units_2nd_sem_grade', 'Unemployment_rate', 'Inflation_rate', 'GDP'] else 1.0
         )
         numerical_inputs[feature] = value
 data.update(pd.DataFrame(numerical_inputs, index=[0]))
