@@ -42,3 +42,8 @@ Dependensi:
 Jika Anda bekerja di sistem operasi lain seperti Linux atau macOS, perintah aktivasi environment sedikit berbeda:
 - **Linux/macOS (bash/zsh)**:
 - source Jaya_Jaya_Institut/bin/activate
+
+## Akses Streamlit App melalui local
+setelah aktivasi environment dan memastikan berada di lokasi direktori yang benar, maka jalankan command:
+
+**streamlit run app.py**
