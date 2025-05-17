@@ -39,6 +39,7 @@ Langkah-langkah Setup:
 1. Buka PowerShell sebagai Administrator:
 - Klik kanan pada ikon PowerShell
 - Pilih “Run as Administrator”
+- atau eksekusi command: "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"
 
 2. Navigasi ke folder proyek:
 - cd "C:\path\to\your\project"
@@ -67,7 +68,7 @@ Dependensi:
 - psycopg==3.2.9: driver PostgreSQL untuk Python, memungkinkan koneksi dan eksekusi query ke PostgreSQL
 
 Jika Anda bekerja di sistem operasi lain seperti Linux atau macOS, perintah aktivasi environment sedikit berbeda:
-- Linux/macOS (bash/zsh):
+- **Linux/macOS (bash/zsh)**:
 - source Jaya_Jaya_Institut/bin/activate
 
 Dengan virtual environment ini, proyek Anda akan lebih stabil, portabel, dan mudah dikembangkan ke lingkungan lain seperti server atau cloud.
@@ -83,9 +84,9 @@ Untuk mendukung eksplorasi data dan pelaporan visual, digunakan platform Metabas
 
 Detail Login Metabase:
 
-Username: root@mail.com
+***Username**: root@mail.com
 
-Password: root123
+**Password**: root123
 
 
 ## Business Dashboard
