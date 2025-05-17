@@ -41,24 +41,18 @@ Langkah-langkah Setup:
 - Pilih “Run as Administrator”
 
 2. Navigasi ke folder proyek:
-  
-cd "C:\path\to\your\project"
-
-contoh: "C:\Users\<nama-laptop>\Downloads\Proyek_Akhir_Kelas_Mahir-Nicholas_Rayden"
+- cd "C:\path\to\your\project"
+- contoh: "C:\Users\<nama-laptop>\Downloads\Proyek_Akhir_Kelas_Mahir-Nicholas_Rayden"
 
 3. Membuat virtual environment:
+- python -m venv Jaya_Jaya_Institut
 
-python -m venv Jaya_Jaya_Institut
+4. Aktivasi environment:
+- .\Jaya_Jaya_Institut\Scripts\Activate
+- (Jika berhasil, Anda akan melihat nama environment ((env)) muncul di awal baris prompt Anda)
 
-5. Aktivasi environment:
-
-.\Jaya_Jaya_Institut\Scripts\Activate
-
-(Jika berhasil, Anda akan melihat nama environment ((env)) muncul di awal baris prompt Anda)
-
-7. Instal semua dependensi dari file requirements.txt:
-
-pip install -r requirements.txt
+5. Instal semua dependensi dari file requirements.txt:
+- pip install -r requirements.txt
 
 Dependensi:
 - pandas==2.2.3: manipulasi dan analisis data
@@ -73,10 +67,8 @@ Dependensi:
 - psycopg==3.2.9: driver PostgreSQL untuk Python, memungkinkan koneksi dan eksekusi query ke PostgreSQL
 
 Jika Anda bekerja di sistem operasi lain seperti Linux atau macOS, perintah aktivasi environment sedikit berbeda:
-
-Linux/macOS (bash/zsh):
-
-source Jaya_Jaya_Institut/bin/activate
+- Linux/macOS (bash/zsh):
+- source Jaya_Jaya_Institut/bin/activate
 
 Dengan virtual environment ini, proyek Anda akan lebih stabil, portabel, dan mudah dikembangkan ke lingkungan lain seperti server atau cloud.
 
