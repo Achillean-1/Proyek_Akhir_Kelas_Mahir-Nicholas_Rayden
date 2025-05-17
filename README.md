@@ -88,6 +88,10 @@ Detail Login Metabase:
 
 **Password**: root123
 
+### Akses Streamlit App melalui local
+setelah aktivasi environment dan memastikan berada di lokasi direktori yang benar, maka jalankan command:
+
+**streamlit run app.py**
 
 ## Business Dashboard
 Business dashboard yang dikembangkan dalam proyek ini bertujuan untuk membantu pihak manajemen Jaya Jaya Institut dalam memantau, memahami, dan mengambil keputusan berbasis data terkait risiko dropout mahasiswa. Dashboard ini menyajikan visualisasi interaktif yang dirancang agar mudah digunakan oleh pengguna non-teknis, khususnya pihak akademik dan pengambil kebijakan.
