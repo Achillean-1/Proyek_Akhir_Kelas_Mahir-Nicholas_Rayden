@@ -11,21 +11,21 @@ Langkah-langkah Setup:
 1. Buka PowerShell sebagai Administrator:
 - Klik kanan pada ikon PowerShell
 - Pilih “Run as Administrator”
-- atau eksekusi command: "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"
+- atau eksekusi command: "**Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned**"
 
 2. Navigasi ke folder proyek:
-- cd "C:\path\to\your\project"
+- **cd "C:\path\to\your\project"**
 - contoh: "C:\Users\<nama-laptop>\Downloads\Proyek_Akhir_Kelas_Mahir-Nicholas_Rayden"
 
 3. Membuat virtual environment:
-- python -m venv Jaya_Jaya_Institut
+- **python -m venv Jaya_Jaya_Institut**
 
 4. Aktivasi environment:
-- .\Jaya_Jaya_Institut\Scripts\Activate
+- **.\Jaya_Jaya_Institut\Scripts\Activate**
 - (Jika berhasil, Anda akan melihat nama environment ((env)) muncul di awal baris prompt Anda)
 
 5. Instal semua dependensi dari file requirements.txt:
-- pip install -r requirements.txt
+- **pip install -r requirements.txt**
 
 Dependensi:
 - pandas==2.2.3: manipulasi dan analisis data
