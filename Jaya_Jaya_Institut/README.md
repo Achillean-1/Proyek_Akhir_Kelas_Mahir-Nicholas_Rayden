@@ -50,7 +50,7 @@ Langkah-langkah Setup:
 
 4. Aktivasi environment:
 - **.\Jaya_Jaya_Institut\Scripts\Activate**
-- (Jika berhasil, Anda akan melihat nama environment ((env)) muncul di awal baris prompt Anda)
+- (Jika berhasil, Anda akan melihat nama environment ((Jaya_Jaya_Institut)) muncul di awal baris prompt Anda)
 
 5. Instal semua dependensi dari file requirements.txt:
 - **pip install -r requirements.txt**
