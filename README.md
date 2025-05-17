@@ -39,7 +39,7 @@ Langkah-langkah Setup:
 1. Buka PowerShell sebagai Administrator:
 - Klik kanan pada ikon PowerShell
 - Pilih “Run as Administrator”
-- atau eksekusi command: "**Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned**"
+- atau eksekusi command: "**Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned**" jika di terminal powershell Visual Code Studio
 
 2. Navigasi ke folder proyek:
 - **cd "C:\path\to\your\project"**
