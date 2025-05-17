@@ -31,6 +31,30 @@ Data yang digunakan dalam proyek ini berasal dari file data.csv, yang berisi inf
 ### Setup environment
 Proyek ini dikembangkan menggunakan bahasa pemrograman Python, dengan library-library berikut untuk mendukung eksplorasi data, pemodelan machine learning, dan visualisasi:
 
+Untuk memastikan semua dependensi proyek terinstal secara konsisten dan lingkungan kerja tetap terisolasi, disarankan menggunakan virtual environment. Berikut adalah panduan langkah demi langkah untuk membuat dan mengaktifkan environment di sistem operasi Windows menggunakan PowerShell:
+
+⚠️ Catatan Penting: Jika Anda menggunakan PowerShell, pastikan Anda membukanya sebagai Administrator, terutama untuk menghindari masalah pada saat membuat environment atau menjalankan perintah instalasi.
+
+Langkah-langkah Setup:
+1. Buka PowerShell sebagai Administrator:
+- Klik kanan pada ikon PowerShell
+- Pilih “Run as Administrator”
+- atau eksekusi command: "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"
+
+2. Navigasi ke folder proyek:
+- cd "C:\path\to\your\project"
+- contoh: "C:\Users\<nama-laptop>\Downloads\Proyek_Akhir_Kelas_Mahir-Nicholas_Rayden"
+
+3. Membuat virtual environment:
+- python -m venv Jaya_Jaya_Institut
+
+4. Aktivasi environment:
+- .\Jaya_Jaya_Institut\Scripts\Activate
+- (Jika berhasil, Anda akan melihat nama environment ((env)) muncul di awal baris prompt Anda)
+
+5. Instal semua dependensi dari file requirements.txt:
+- pip install -r requirements.txt
+
 Dependensi:
 - pandas==2.2.3: manipulasi dan analisis data
 - numpy==2.2.5: operasi numerik
@@ -43,9 +67,11 @@ Dependensi:
 - sqlalchemy==2.0.40: ORM untuk menghubungkan aplikasi Python dengan database
 - psycopg==3.2.9: driver PostgreSQL untuk Python, memungkinkan koneksi dan eksekusi query ke PostgreSQL
 
-Instalasi lingkungan:
-Untuk memastikan semua dependensi terinstal sesuai versi, gunakan perintah:
-pip install -r requirements.txt
+Jika Anda bekerja di sistem operasi lain seperti Linux atau macOS, perintah aktivasi environment sedikit berbeda:
+- **Linux/macOS (bash/zsh)**:
+- source Jaya_Jaya_Institut/bin/activate
+
+Dengan virtual environment ini, proyek Anda akan lebih stabil, portabel, dan mudah dikembangkan ke lingkungan lain seperti server atau cloud.
 
 ### Preprocessing Awal
 - Cleansing Data: Menghapus nilai null, duplikat, dan data tidak valid.
@@ -58,9 +84,9 @@ Untuk mendukung eksplorasi data dan pelaporan visual, digunakan platform Metabas
 
 Detail Login Metabase:
 
-Username: root@mail.com
+***Username**: root@mail.com
 
-Password: root123
+**Password**: root123
 
 
 ## Business Dashboard
