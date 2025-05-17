@@ -84,7 +84,7 @@ Untuk mendukung eksplorasi data dan pelaporan visual, digunakan platform Metabas
 
 Detail Login Metabase:
 
-***Username**: root@mail.com
+**Username**: root@mail.com
 
 **Password**: root123
 
